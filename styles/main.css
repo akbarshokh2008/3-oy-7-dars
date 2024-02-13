@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+main {
+  flex-grow: 1;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 145px;
+  padding-right: 145px;
+}
+
+footer {
+  padding-top: 23px;
+}
+
+.xira-p {
+  color: rgb(119, 119, 119);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  padding-top: 15px;
+}
+@media (max-width: 700px) {
+  .xira-p {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 11px;
+  }
+}
+
+.paragrif {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+@media (max-width: 700px) {
+  .paragrif {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 11px;
+  }
+}
+
+@font-face {
+  font-family: face;
+  src: url();
+}
+.hero .btn {
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+@media (max-width: 700px) {
+  .hero .btn {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    line-height: 16px;
+    border-radius: 6px;
+  }
+}
+
+.footer {
+  background: rgb(107, 107, 107);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.footer-container .navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-container .navbar a {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.footer2 {
+  background: #111111;
+}
+
+.footer2__text {
+  color: rgb(119, 119, 119);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+header {
+  background-color: #6b6b6b;
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+header .header-container .logo__qism {
+  display: flex;
+}
+header .header-container .navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .header-container .navbar a {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.hero {
+  background: rgb(235, 235, 235);
+  padding: 50px 0;
+}
+.hero .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 970px) {
+  .hero .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 50px;
+  }
+}
+.hero .hero-text {
+  width: 100%;
+  max-width: 575px;
+}
+.hero .hero-title {
+  color: rgb(51, 51, 51);
+  font-family: roboto;
+  font-size: 39px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0%;
+  padding-bottom: 15px;
+}
+@media (max-width: 700px) {
+  .hero .hero-title {
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-bottom: 12px;
+  }
+}
+.hero .hero-deck {
+  color: rgb(51, 51, 51);
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: #333;
+  padding-bottom: 40px;
+}
+@media (max-width: 700px) {
+  .hero .hero-deck {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+    padding-bottom: 30px;
+  }
+}
+.hero .hero__rasm {
+  text-align: center;
+  padding-right: 60px;
+}
+@media (max-width: 970px) {
+  .hero .hero__rasm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+}
+.hero .hero-img {
+  padding-bottom: 25px;
+}
+
+.tarmoqlar {
+  background-color: #d3d3d3;
+}
+.tarmoqlar .tarmoqlar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+@media (max-width: 970px) {
+  .tarmoqlar .tarmoqlar-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 50px);
+    gap: 20px;
+  }
+}
+
+.malumotlar {
+  background: #fff;
+}
+.malumotlar .malumotlar-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 970px) {
+  .malumotlar .malumotlar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.malumotlar .malumotlar__birinchi,
+.malumotlar .malumotlar__ikkinchi {
+  width: 576px;
+  height: 310px;
+}
+@media (max-width: 970px) {
+  .malumotlar .malumotlar__birinchi,
+  .malumotlar .malumotlar__ikkinchi {
+    border: 5px solid rgb(210, 154, 12);
+  }
+}
+.malumotlar .malumotlar__birinchi,
+.malumotlar .malumotlar__turinchi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 45px;
+}
+.malumotlar .malumotlar__birinchi p,
+.malumotlar .malumotlar__turinchi p {
+  font-family: Roboto;
+}
+@media (max-width: 700px) {
+  .malumotlar .malumotlar__birinchi p,
+  .malumotlar .malumotlar__turinchi p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.malumotlar h2 {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  padding-bottom: 14px;
+}
+@media (max-width: 700px) {
+  .malumotlar h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 11px;
+  }
+}
+.malumotlar .malumotlar__ikkinchi {
+  text-align: center;
+}
+.malumotlar .malumotlar__ikkinchi .xira-p {
+  padding-top: 15px;
+}
+.malumotlar .malumotlar__uchunchi,
+.malumotlar .malumotlar__turinchi {
+  width: 576px;
+  height: 250px;
+}
+@media (max-width: 970px) {
+  .malumotlar .malumotlar__uchunchi,
+  .malumotlar .malumotlar__turinchi {
+    border: 5px solid rgb(210, 154, 12);
+  }
+}
+.malumotlar .malumotlar__uchunchi {
+  text-align: center;
+}
+.malumotlar .malumotlar__uchunchi .xira-p {
+  padding-top: 15px;
+}
+
+.tanishtiruv {
+  background: rgb(235, 235, 235);
+}
+.tanishtiruv .tanishtiruv-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.tanishtiruv .tanishtiruv-container .tanishtiruv__sarlavha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tanishtiruv .tanishtiruv-container h2 {
+  color: rgb(51, 51, 51);
+  font-family: Roboto;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  padding-bottom: 11px;
+}
+.tanishtiruv .tanishtiruv-container .layout-p {
+  color: rgb(51, 51, 51);
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-bottom: 20px;
+}
+.tanishtiruv .tanishtiruv-container .xira-p {
+  padding-top: 20px;
+}
+.tanishtiruv .tanishtiruv__bulim {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+}
+@media (max-width: 970px) {
+  .tanishtiruv .tanishtiruv__bulim {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.tanishtiruv .tanishtiruv__bulim h3 {
+  color: rgb(51, 51, 51);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-bottom: 30px;
+}
+.tanishtiruv .tanishtiruv__bulim img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  padding-bottom: 30px;
+}
+.tanishtiruv .tanishtiruv__qator {
+  width: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 30px 50px;
+}
+@media (max-width: 970px) {
+  .tanishtiruv .tanishtiruv__qator {
+    border: 5px solid rgb(11, 209, 231);
+    width: 300px;
+  }
+}
+.tanishtiruv .tanishtiruv__qator p {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+@media (max-width: 970px) {
+  .tanishtiruv .tanishtiruv__qator p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 11px;
+  }
+}
+
+.tushuntiruv {
+  background: #fff;
+}
+.tushuntiruv .tushuntiruv-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 970px) {
+  .tushuntiruv .tushuntiruv-container {
+    text-align: center;
+  }
+}
+.tushuntiruv h2 {
+  color: rgb(51, 51, 51);
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+.tushuntiruv .tushuntiruv__bulim {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 970px) {
+  .tushuntiruv .tushuntiruv__bulim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+.tushuntiruv .tushuntiruv__qator {
+  width: 298px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+@media (max-width: 970px) {
+  .tushuntiruv .tushuntiruv__qator {
+    border: 5px solid rgb(76, 0, 255);
+  }
+}
+.tushuntiruv .tushuntiruv__qator h3 {
+  color: rgb(51, 51, 51);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+@media (max-width: 970px) {
+  .tushuntiruv .tushuntiruv__qator h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    padding-top: 30px;
+    padding-bottom: 11px;
+  }
+}
+.tushuntiruv .tushuntiruv__qator p {
+  color: rgb(51, 51, 51);
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+@media (max-width: 970px) {
+  .tushuntiruv .tushuntiruv__qator p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+.tushuntiruv .tushuntiruv__qator img {
+  width: 200px;
+}/*# sourceMappingURL=main.css.map */

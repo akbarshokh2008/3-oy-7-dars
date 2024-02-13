@@ -1,0 +1,67 @@
+.hero {
+  background: rgb(235, 235, 235);
+  padding: 50px 0;
+
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 970px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 50px;
+    }
+  }
+  .hero-text {
+    width: 100%;
+    max-width: 575px;
+  }
+  .hero-title {
+    color: rgb(51, 51, 51);
+    font-family: roboto;
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0%;
+    padding-bottom: 15px;
+
+    @media (max-width: 700px) {
+      font-size: 27px;
+      line-height: 30px;
+      font-weight: 300;
+      padding-bottom: 12px;
+    }
+  }
+  .hero-deck {
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: #333;
+    padding-bottom: 40px;
+
+    @media (max-width: 700px) {
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 300;
+      padding-bottom: 30px;
+    }
+  }
+  .hero__rasm {
+    text-align: center;
+    padding-right: 60px;
+
+    @media (max-width: 970px) {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+    }
+  }
+  .hero-img {
+    padding-bottom: 25px;
+  }
+}

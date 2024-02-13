@@ -1,0 +1,84 @@
+.malumotlar {
+  background: #fff;
+  .malumotlar-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: 970px) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  .malumotlar__birinchi,
+  .malumotlar__ikkinchi {
+    width: 576px;
+    height: 310px;
+
+    @media (max-width: 970px) {
+      border: 5px solid rgb(210, 154, 12);
+    }
+  }
+
+  .malumotlar__birinchi,
+  .malumotlar__turinchi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 45px;
+
+    p {
+      font-family: Roboto;
+    }
+
+    @media (max-width: 700px) {
+      p {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  h2 {
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    padding-bottom: 14px;
+
+    @media (max-width: 700px) {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      padding-bottom: 11px;
+    }
+  }
+
+  .malumotlar__ikkinchi {
+    text-align: center;
+
+    .xira-p {
+      padding-top: 15px;
+    }
+  }
+  .malumotlar__uchunchi,
+  .malumotlar__turinchi {
+    width: 576px;
+    height: 250px;
+
+    @media (max-width: 970px) {
+      border: 5px solid rgb(210, 154, 12);
+    }
+  }
+  .malumotlar__uchunchi {
+    text-align: center;
+
+    .xira-p {
+      padding-top: 15px;
+    }
+  }
+}
